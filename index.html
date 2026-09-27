@@ -47,7 +47,7 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="tag">FrightFinder · Effective September 27, 2026</p>
+  <p class="tag">FrightFinder · Effective September 27, 2026 · <a href="delete-account.html">Delete your account</a></p>
 
   <p>FrightFinder (“the App”) helps you find haunted attractions (professional haunts and home haunts) by city and on a map. It is published by Sam Morton / MortonWebWorks (“we”, “us”). This policy explains what information the App handles, why, and your choices.</p>
 
@@ -76,7 +76,7 @@
   <p>When signed in, content you create is stored in Google Firebase (Cloud Firestore and Cloud Storage), along with your user ID and name:</p>
   <ul>
     <li><strong>Reviews</strong>: 1–5 scare rating, review text, up to 5 photos you pick from your gallery, date. Public to other users.</li>
-    <li><strong>Photos</strong> added to a haunt’s gallery (stored under that haunt in Cloud Storage). Public to other users.</li>
+    <li><strong>Photos</strong> added to a haunt’s gallery (stored under that haunt in Cloud Storage, with a record of your user ID and name as the uploader so you can delete them later). Public to other users.</li>
     <li><strong>Haunt listings</strong> you add or edit: name, description, address, map coordinates, operating hours, website, type (pro or home) and photos. Public to other users.</li>
     <li><strong>Ownership claims</strong>: your name, email, user ID and any notes. Not shown to other users in the App; reviewed by app administrators.</li>
     <li><strong>Review reports</strong>: your name, user ID, the reason and notes, plus a copy of the reported review. Not shown to other users in the App; reviewed by app administrators.</li>
@@ -97,7 +97,11 @@
   <p>All communication between the App and Firebase and the other services above uses encrypted HTTPS/TLS connections. Data at rest in Firebase is encrypted by Google.</p>
 
   <h2>7. Retention and deletion</h2>
-  <p>Content stays in our backend until you or an administrator removes it. You can delete gallery photos you uploaded from within the App. To delete your account data (your reviews, photos, claims, reports and any role records tied to your email or user ID), email <a href="mailto:samulanddev@gmail.com?subject=FrightFinder%20data%20deletion">samulanddev@gmail.com</a> with the subject “FrightFinder data deletion” from the Google account you used. We will delete it within 30 days. Anonymous IDs that never posted content hold no personal information. You can also remove FrightFinder’s access to your Google account at any time in your Google Account settings. Uninstalling the App removes its on-device data.</p>
+  <p>Content stays in our backend until you or an administrator removes it. You can delete gallery photos you uploaded from within the App.</p>
+  <p><strong>Delete your account in the App:</strong> while signed in with Google, tap your profile button (your Google profile picture) &rarr; <strong>Delete account</strong> &rarr; type DELETE &rarr; <strong>Delete forever</strong>. Deletion runs immediately and removes your ownership claims, the review reports you filed, your reviews and their photos, the gallery photos you uploaded, and the home-haunt listings you alone own, then deletes your Firebase sign-in account and signs you out of Google. Professional haunt listings and listings you co-own are kept for other visitors, but your name and user ID are removed from their owner list.</p>
+  <p><strong>Delete by email:</strong> email <a href="mailto:samulanddev@gmail.com?subject=FrightFinder%20data%20deletion">samulanddev@gmail.com</a> with the subject &ldquo;FrightFinder data deletion&rdquo; from the Google account you used. We will delete the same data, plus any admin or owner role record tied to your email or user ID, within 30 days.</p>
+  <p>A small role record (your email and role, e.g. &ldquo;owner&rdquo;) may exist if an administrator assigned you a role; the App cannot remove it itself, so it is deleted when you email us. Reports that other users filed about your reviews are kept by administrators for moderation. See <a href="delete-account.html">Delete your FrightFinder account</a> for the full list of what is deleted and what is kept.</p>
+  <p>Anonymous IDs that never posted content hold no personal information. You can also remove FrightFinder&rsquo;s access to your Google account at any time in your Google Account settings. Uninstalling the App removes its on-device data.</p>
 
   <h2>8. Children</h2>
   <p>FrightFinder features horror-themed attractions and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has submitted information, contact us and we will delete it.</p>

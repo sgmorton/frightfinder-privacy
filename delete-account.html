@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delete your account — FrightFinder</title>
+  <style>
+    :root {
+      --bg: #141414;
+      --card: #1e1e1e;
+      --border: #2e2e2e;
+      --text: #f3efe6;
+      --muted: #b3aca0;
+      --accent: #FF6A00;
+      --danger: #e5484d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main { max-width: 740px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    h1 { font-size: 1.8rem; margin: 0 0 0.25rem; color: var(--accent); letter-spacing: 0.02em; }
+    .tag { color: var(--muted); margin: 0 0 2rem; }
+    h2 {
+      font-size: 1.05rem; margin: 2.2rem 0 0.75rem; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 0.07em;
+      border-bottom: 1px solid var(--border); padding-bottom: 0.3rem;
+    }
+    ol, ul { padding-left: 1.3rem; }
+    li { margin: 0.3rem 0; }
+    a { color: var(--accent); }
+    strong { color: #ffffff; }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-left: 4px solid var(--accent); border-radius: 10px;
+      padding: 1rem 1.15rem; margin: 1rem 0;
+    }
+    .card.danger { border-left-color: var(--danger); }
+    .btn {
+      display: inline-block; background: var(--accent); color: #141414;
+      font-weight: 700; text-decoration: none; padding: 0.6rem 1.1rem;
+      border-radius: 8px; margin-top: 0.5rem;
+    }
+    code {
+      background: #262626; border: 1px solid var(--border); border-radius: 4px;
+      padding: 0.05rem 0.35rem; color: #ffffff;
+    }
+    footer {
+      margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border);
+      color: var(--muted); font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Delete your FrightFinder account</h1>
+  <p class="tag">FrightFinder by Sam Morton / MortonWebWorks · <a href="index.html">Privacy Policy</a></p>
+
+  <p>You can delete your FrightFinder account and the data tied to it at any time, either directly in the App or by email. Browsing without signing in uses only an anonymous ID with no personal information, so there is nothing to delete unless you signed in with Google.</p>
+
+  <h2>Option 1: Delete in the App (immediate)</h2>
+  <ol>
+    <li>Open FrightFinder and make sure you are signed in with Google.</li>
+    <li>Tap your <strong>profile button</strong> (your Google profile picture or initial) to open your profile.</li>
+    <li>Tap <strong>Delete account</strong> (in red, below Sign Out).</li>
+    <li>Read the warning, type <code>DELETE</code> in the box, and tap <strong>Delete forever</strong>.</li>
+    <li>If you have not signed in recently, Google asks you to confirm your account first. This is required by Firebase before an account can be deleted.</li>
+  </ol>
+  <p>Deletion starts right away and usually finishes within a few seconds. When it is done, the App signs you out of Google and continues as an anonymous visitor.</p>
+
+  <h2>Option 2: Request deletion by email</h2>
+  <div class="card">
+    <p style="margin-top:0">If you no longer have the App or cannot sign in, email us from the Google account you used with FrightFinder:</p>
+    <ul>
+      <li>To: <a href="mailto:samulanddev@gmail.com?subject=FrightFinder%20data%20deletion">samulanddev@gmail.com</a></li>
+      <li>Subject: <strong>FrightFinder data deletion</strong></li>
+    </ul>
+    <a class="btn" href="mailto:samulanddev@gmail.com?subject=FrightFinder%20data%20deletion">Email a deletion request</a>
+    <p style="margin-bottom:0">We may reply to confirm that you own the account. We complete email requests <strong>within 30 days</strong>, and we delete everything listed below, including any role record.</p>
+  </div>
+
+  <h2>What gets deleted</h2>
+  <ul>
+    <li>Your <strong>FrightFinder sign-in account</strong> (Firebase Authentication user). The App also disconnects its access to your Google account.</li>
+    <li>Your <strong>reviews</strong> (rating, text, name) and the <strong>photos attached to them</strong>.</li>
+    <li><strong>Gallery photos you uploaded</strong> to any haunt, including the image files and their records.</li>
+    <li><strong>Home-haunt listings you alone own</strong>, along with their photo records.</li>
+    <li><strong>Ownership claims</strong> you submitted (these contain your name, email and notes).</li>
+    <li><strong>Review reports</strong> you filed.</li>
+    <li>Your name and user ID in the <strong>owner list</strong> of any professional haunt or co-owned listing.</li>
+  </ul>
+
+  <h2>What is kept</h2>
+  <div class="card danger">
+    <ul style="margin:0">
+      <li><strong>Professional haunt listings and co-owned listings</strong> stay published for other visitors, but they are no longer linked to you.</li>
+      <li><strong>Role record:</strong> if an administrator gave you a role (for example &ldquo;owner&rdquo;), a small record with your email and role exists. The App cannot delete it. It grants nothing once your account is gone, and we delete it when you email us.</li>
+      <li><strong>Reports other users filed</strong> about your reviews are kept by administrators for moderation records.</li>
+      <li><strong>Older photos</strong> uploaded with App versions before 1.0.0 (build 2) did not record who uploaded them. We delete them when you email us.</li>
+      <li>Reviews and photos that <em>other people</em> posted on a home haunt you deleted are no longer shown in the App. We remove them when asked.</li>
+    </ul>
+  </div>
+  <p>Google Firebase may keep deleted data in encrypted backups for a limited period before it is permanently removed. Uninstalling the App removes its on-device data.</p>
+
+  <h2>Contact</h2>
+  <p>Sam Morton / MortonWebWorks · <a href="mailto:samulanddev@gmail.com">samulanddev@gmail.com</a></p>
+
+  <footer>© 2026 MortonWebWorks. FrightFinder account deletion.</footer>
+</main>
+</body>
+</html>
