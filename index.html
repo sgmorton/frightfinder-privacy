@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — FrightFinder</title>
+  <style>
+    :root {
+      --bg: #141414;
+      --card: #1e1e1e;
+      --border: #2e2e2e;
+      --text: #f3efe6;
+      --muted: #b3aca0;
+      --accent: #FF6A00;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main { max-width: 740px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    h1 { font-size: 1.8rem; margin: 0 0 0.25rem; color: var(--accent); letter-spacing: 0.02em; }
+    .tag { color: var(--muted); margin: 0 0 2rem; }
+    h2 {
+      font-size: 1.05rem; margin: 2.2rem 0 0.75rem; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 0.07em;
+      border-bottom: 1px solid var(--border); padding-bottom: 0.3rem;
+    }
+    ul { padding-left: 1.2rem; }
+    li { margin: 0.25rem 0; }
+    a { color: var(--accent); }
+    strong { color: #ffffff; }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-left: 4px solid var(--accent); border-radius: 10px;
+      padding: 1rem 1.15rem; margin: 1rem 0;
+    }
+    footer {
+      margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border);
+      color: var(--muted); font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="tag">FrightFinder · Effective September 27, 2026</p>
+
+  <p>FrightFinder (“the App”) helps you find haunted attractions (professional haunts and home haunts) by city and on a map. It is published by Sam Morton / MortonWebWorks (“we”, “us”). This policy explains what information the App handles, why, and your choices.</p>
+
+  <div class="card">
+    <strong>Summary:</strong> The App signs you in anonymously so it can talk to our Firebase backend. Your device location is used on your phone to center the map and pick the nearest city; the App does not send it to our servers. If you choose to sign in with Google and post reviews, photos, haunt listings, ownership claims or reports, that content (and the name attached to it) is stored in our Firebase backend and reviews, photos and haunt listings are visible to other users. There are no ads, no analytics SDKs and we do not sell your data.
+  </div>
+
+  <h2>1. Anonymous sign-in</h2>
+  <p>When the App starts it uses Firebase Authentication (Google) to create an <strong>anonymous user ID</strong>, a random identifier not linked to your name or email. It lets our security rules allow reading haunt data and submitting content. Firebase may process technical data such as your IP address and device/app identifiers to provide the sign-in service and prevent abuse.</p>
+
+  <h2>2. Optional Google Sign-In</h2>
+  <p>Browsing haunts and the map does not require an account. To add reviews, add photos, submit a haunt, or claim ownership of a haunt, you must sign in with Google. If you do, the App receives from your Google account:</p>
+  <ul>
+    <li>Your display name</li>
+    <li>Your email address</li>
+    <li>Your profile photo URL</li>
+    <li>A Firebase / Google user identifier</li>
+  </ul>
+  <p>Your display name (or, if you have none, your email address) may be shown publicly next to reviews and photos you post. Your email address is used to identify your account, to determine admin or moderator roles, and is included with ownership claim requests so we can verify and contact you.</p>
+
+  <h2>3. Location</h2>
+  <p>If you grant location permission, the App reads your device’s location (it requests precise and approximate location; it asks for a medium-accuracy fix) to center the map near you and choose the nearest listed city. This happens <strong>on your device</strong>. The App does not upload your location to our servers or store your location history. If you deny permission the App falls back to a default city and still works.</p>
+  <p>Note that map tiles are downloaded from Esri’s ArcGIS basemap service for the area you are viewing, so that provider receives your IP address and the map area requested, as with any online map.</p>
+
+  <h2>4. Content you submit</h2>
+  <p>When signed in, content you create is stored in Google Firebase (Cloud Firestore and Cloud Storage), along with your user ID and name:</p>
+  <ul>
+    <li><strong>Reviews</strong>: star rating, review text, up to 5 photos you pick from your gallery, date. Public to other users.</li>
+    <li><strong>Photos</strong> added to a haunt’s gallery (stored under that haunt in Cloud Storage). Public to other users.</li>
+    <li><strong>Haunt listings</strong> you add or edit: name, description, address, map coordinates, operating hours, website, type (pro or home) and photos. Public to other users.</li>
+    <li><strong>Ownership claims</strong>: your name, email, user ID and any notes. Not shown to other users in the App; reviewed by app administrators.</li>
+    <li><strong>Review reports</strong>: your name, user ID, the reason and notes, plus a copy of the reported review. Not shown to other users in the App; reviewed by app administrators.</li>
+  </ul>
+  <p>Photos are selected from your photo library only when you choose to add one. The App does not access your camera or library otherwise.</p>
+
+  <h2>5. Third-party services</h2>
+  <ul>
+    <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore, Cloud Storage) stores and serves app data. <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>.</li>
+    <li><strong>Google Sign-In</strong> is optional (see section 2). <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+    <li><strong>OpenStreetMap Nominatim</strong>: when you add or edit a haunt, the street address you type is sent to Nominatim to look up its map coordinates. <a href="https://osmfoundation.org/wiki/Privacy_Policy">OSMF privacy policy</a>.</li>
+    <li><strong>Esri ArcGIS basemap tiles</strong> are used for map imagery (see section 3).</li>
+    <li><strong>Google Maps / your browser</strong>: tapping Directions opens Google Maps with the haunt’s coordinates. Tapping a website opens it in your browser. Those apps and sites have their own policies.</li>
+  </ul>
+  <p>The App contains <strong>no advertising</strong>, <strong>no analytics or crash-reporting SDKs</strong>, and we <strong>do not sell or rent</strong> personal information.</p>
+
+  <h2>6. Security</h2>
+  <p>All communication between the App and Firebase and the other services above uses encrypted HTTPS/TLS connections. Data at rest in Firebase is encrypted by Google.</p>
+
+  <h2>7. Retention and deletion</h2>
+  <p>Content stays in our backend until you or an administrator removes it. You can delete gallery photos you uploaded from within the App. To delete your account data (your reviews, photos, claims, reports and any role records tied to your email or user ID), email <a href="mailto:samulanddev@gmail.com?subject=FrightFinder%20data%20deletion">samulanddev@gmail.com</a> with the subject “FrightFinder data deletion” from the Google account you used. We will delete it within 30 days. Anonymous IDs that never posted content hold no personal information. You can also remove FrightFinder’s access to your Google account at any time in your Google Account settings. Uninstalling the App removes its on-device data.</p>
+
+  <h2>8. Children</h2>
+  <p>FrightFinder features horror-themed attractions and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has submitted information, contact us and we will delete it.</p>
+
+  <h2>9. Changes</h2>
+  <p>We may update this policy as the App changes. The effective date above will change when we do.</p>
+
+  <h2>10. Contact</h2>
+  <p>Sam Morton / MortonWebWorks · <a href="mailto:samulanddev@gmail.com">samulanddev@gmail.com</a></p>
+
+  <footer>© 2026 MortonWebWorks. FrightFinder privacy policy.</footer>
+</main>
+</body>
+</html>
